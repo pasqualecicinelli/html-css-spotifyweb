@@ -11,12 +11,32 @@
     border: 3px solid green;
 }
 
+/*--SIDE-BAR--*/
 
+#side-bar{
+    height: 100vh;
+    width: 300px;
+    border: 3px solid green;
+}
+
+/*--HEADER--*/
+
+#header{
+    width: calc(100% - 320px);
+    min-height: 80px;
+    border: 3px solid green;
+    
+}
 
 /*--FOOTER--*/
 
-#foot{
+#foot {
     height: 100px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
 }
 
 #foot .flex-foot {
@@ -26,7 +46,7 @@
 }
 
 #foot .flex-card {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
 
 }
@@ -52,24 +72,16 @@
 
 /*--LG--*/
 
-@media screen and (width:992px) {
-
-}
+@media screen and (width:992px) {}
 
 /*--MD--*/
 
-@media screen and (width:768px) {
-
-}
+@media screen and (width:768px) {}
 
 /*--S--*/
 
-@media screen and (width:576px) {
-    
-}
+@media screen and (width:576px) {}
 
 /*--XS--*/
 
-@media screen and (width:0px) {
-
-}
+@media screen and (width:0px) {}
