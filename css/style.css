@@ -11,6 +11,14 @@
     border: 3px solid green;
 }
 
+/*--MAIN--*/
+
+#main{
+    width: 100%;
+    margin-bottom: 100px;
+    display: flex;
+}
+
 /*--SIDE-BAR--*/
 
 #side-bar{
@@ -19,12 +27,24 @@
     border: 3px solid green;
 }
 
+#side-bar .flex-end >.bottom-bar{
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
 /*--HEADER--*/
 
 #header{
-    width: calc(100% - 320px);
-    min-height: 80px;
+    width: calc(100% - 300px);
+    height: 80px;
+    line-height: 80px;
     border: 3px solid green;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
     
 }
 
@@ -55,12 +75,12 @@
 
 .debug {
     border: 3px solid black;
-    min-height: 400px;
+    min-height: 200px;
 }
 
 .debug-card {
     border: 3px dashed red;
-    min-height: 200px;
+    min-height: 100px;
 
 }
 
