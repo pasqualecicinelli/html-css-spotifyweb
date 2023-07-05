@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -15,93 +21,166 @@
 
         <nav id="side-bar">
             <div class="container">
-                <div class="top-bar debug">
-                    <div class="logo"></div>
-                    <span></span>
-                    <div class="icons"></div><span></span>
-                    <div class="icons"></div><span></span>
-                    <div class="icons"></div><span></span>
-                </div>
+                <div class="row">
+                    <div class="col debug">
+                        <div class="card">
+                            <div class="logo"></div>
+                            <span></span>
+                        </div>
+                        <div class="card">
+                            <div class="icons"></div><span></span>
+                            <div class="icons"></div><span></span>
+                            <div class="icons"></div><span></span>
+                        </div>
+                    </div>
 
-                <div class="playlist debug">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-
-                <div class="flex-end">
-                    <div class="bottom-bar debug">
-                        <div class="icons">dgd<span>bau</span> <!--border-bottom--></div>
-                        <div>svg</div> <span>dg</span>
+                    <div class="col debug">
+                        <div class="card">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex-end">
+                        <div class="col debug">
+                            <div class="card debug-card">
+                                <div class="icons">dgd<span>bau</span> <!--border-bottom--></div>
+                                <div>svg</div> <span>dg</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </nav>
 
-      <!--HEADER-->
+        <!--HEADER-->
 
         <header id="header">
-            <button>s</button>
+            <div class="">
+                <button>s</button>
+            </div>
         </header>
+
+        <section id="cover">
+            <div class="container flex-card">
+                <div class="row">
+                    <div class="card">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="col debug">
+                        <div>title</div>
+                        <div class="card">
+                            <div>img</div>
+                            <div></div>
+                            <span></span>
+                        </div>
+                        <div class="card">
+                            <div>img</div>
+                            <div></div>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="col debug">
+                        <div class="card">
+                            <div>img</div>
+                            <div></div>
+                            <span></span>
+                        </div>
+                        <div class="card">
+                            <div>img</div>
+                            <div></div>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col debug">
+                    <div class="card debug-card">
+                        <div>img</div>
+                        <div></div>
+                        <span></span>
+                    </div>
+                    <div class="card">
+                        <div>img</div>
+                        <div></div>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
     </main>
 
     <!--FOOTER-->
     <footer id="foot">
         <div class="full-container">
-            <div class="flex-foot">
+            <div class="row">
+                <div class="flex-foot">
 
-                <!--COL--LEFT-->
+                    <!--COL--LEFT-->
 
-                <div class="col debug">
-                    <div class="card debug-card flex-card">
-                        <div class="img debug-icons">img</div>
-                        <span class="text debug-icons">testo</span>
-                        <div class="text debug-icons">testo</div>
-                        <span class="text debug-icons">testo</span>
-                        <div class="sm-card flex-card">
-                            <div class="icons debug-icons">icona</div>
-                            <div class="icons debug-icons">icona</div>
+                    <div class="col ">
+                        <div class="card flex-card">
+                            <div class="foot-img"><img src="./img/sinister.jpeg" alt=""></div>
+                            <div class=" margin-lr-15 flex-column">
+                                <h5 class="text">Sinister</h5>
+                                <div class="sm-card">
+                                    <span>Brano</span>
+                                    <span>Nome</span>
+                                </div>
+                            </div>
+                            <div class="sm-card flex-card">
+                                <div class="icons margin-lr-15"><i class="fa-regular fa-heart"></i></div>
+                                <div class="icons "><i class="fa-regular fa-folder"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--COL--CENTER-->
+
+                    <div class="col">
+                        <div class="card flex-card">
+                            <div class="icons margin-lr-15"><i class="fa-solid fa-shuffle"></i></div>
+                            <div class="icons margin-lr-15"><i class="fa-solid fa-backward-step"></i></div>
+                            <div class="icons margin-lr-15"><i class="fa-regular fa-circle-play"></i></div>
+                            <div class="icons margin-lr-15"><i class="fa-solid fa-forward-step"></i></div>
+                            <div class="icons margin-lr-15"><i class="fa-solid fa-rotate-right"></i></div>
+                        </div>
+                        <div class="card margin-tb-10 flex-card">
+                            <div class="time margin-lr-15">0:25</div>
+                            <span class="volume-middle-2"></span><div class="volume-middle"></div>
+                            <div class="time margin-lr-15">4:35</div>
+                        </div>
+                    </div>
+
+                    <!--COL--RIGHT-->
+
+                    <div class="col">
+                        <div class="card flex-card">
+                            <div class="icons margin-lr-15"><i class="fa-solid fa-list"></i></div>
+                            <div class="icons margin-lr-15"><i class="fa-solid fa-desktop"></i></div>
+                            <div class="icons margin-lr-15"><i class="fa-solid fa-volume-high"></i></div>
+                            <span class="volume-2"></span><div class="volume"></div>
                         </div>
                     </div>
                 </div>
-
-                <!--COL--CENTER-->
-
-                <div class="col debug">
-                    <div class="card debug-card flex-card">
-                        <div class="icons debug-icons">icona</div>
-                        <div class="icons debug-icons">icona</div>
-                        <div class="icons debug-icons">icona</div>
-                        <div class="icons debug-icons">icona</div>
-                        <div class="icons debug-icons">icona</div>
-                    </div>
-                    <div class="card debug-card flex-card">
-                        <div class="time debug-icons">icona</div>
-                        <div class="time debug-icons">icona</div>
-                        <div class="time debug-icons">icona</div>
-                    </div>
-                </div>
-
-                <!--COL--RIGHT-->
-
-                <div class="col debug">
-                    <div class="card debug-card flex-card">
-                        <div class="icons debug-icons">icona</div>
-                        <div class="icons debug-icons">icona</div>
-                        <div class="icons debug-icons">icona</div>
-                        <div class="icons debug-icons">icona</div>
-                    </div>
-                </div>
             </div>
-
         </div>
     </footer>
 </body>
