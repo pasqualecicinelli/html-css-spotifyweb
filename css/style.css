@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
 }
 
 :root {
@@ -44,7 +45,7 @@ body {
 }
 
 .col {
-    padding: 1rem;
+    padding: 0.75rem;
 
 }
 
@@ -147,10 +148,19 @@ button {
 }
 
 #cover .card{
-    width: 100%;
-    padding: 1rem 0;
+    width: calc((100% / 2) - 0.5rem);
+    padding: 1rem 0.5rem;
+    text-align: center;
 }
-#cover .row>.card + .card{
+#cover .card>h3{
+    color: var(--white);
+    margin: 10px 0;
+}
+#cover span{
+    color: var(--text-grey);
+}
+#cover .card-title{
+    width: 100%;
     padding: 0 1rem;
 }
 
@@ -163,6 +173,17 @@ button {
     color: var(--white);
 }
 
+#cover .album>img{
+    width: 200px;
+}
+
+#cover .col-100{
+    padding: 1rem;
+   
+}
+#cover .album-circle>img{
+    border-radius: 50%;
+}
 /*--FOOTER--*/
 
 #foot {
@@ -263,6 +284,13 @@ button {
 .flex-column {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+}
+.flex-column-start {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: start;
 }
 
 .flex-center {
@@ -271,6 +299,7 @@ button {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    
 
 }
 
@@ -279,7 +308,23 @@ button {
     justify-content: space-between;
     align-items: center;
 }
+.flex-cover{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 
+}
+
+.flex-left{
+    display: flex;
+    flex-direction: row;
+   
+    
+  
+
+}
 /*--DEBUG--*/
 
 .debug {
