@@ -115,6 +115,26 @@ button {
 
 #side-bar .download {
     width: 25px;
+    margin: 5px 10px 0 0;
+}
+#side-bar .text-grey{
+    color: var(--text-grey);
+}
+
+#side-bar .border{
+    width: 100%;
+    padding-right: 10rem;
+    border: 1px solid var(--plus);
+}
+#side-bar .profile{
+    width: 25px;
+    background-color: var(--plus);
+    border-radius: 50%;
+    margin: 5px 10px 0 0;
+}
+#side-bar h3{
+    color: var(--white);
+    margin: 5px 10px 0 0;
 }
 
 /*--HEADER--*/
@@ -161,7 +181,7 @@ button {
 }
 #cover .card-title{
     width: 100%;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 #cover li{
@@ -277,8 +297,9 @@ button {
 
 .flex-end {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     flex-wrap: wrap;
+    
 }
 
 .flex-column {
@@ -323,27 +344,6 @@ button {
    
     
   
-
-}
-/*--DEBUG--*/
-
-.debug {
-    border: 3px solid black;
-    min-height: 200px;
-    min-width: 200px;
-}
-
-.debug-card {
-    border: 3px dashed red;
-    min-height: 100px;
-    min-width: 100px;
-
-}
-
-.debug-icons {
-    border: 3px dashed blue;
-    min-height: 50px;
-    min-width: 50px;
 
 }
 
