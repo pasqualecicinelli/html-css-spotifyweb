@@ -168,7 +168,7 @@ button {
 }
 
 #cover .card{
-    width: calc((100% / 2) - 0.5rem);
+    max-width: calc((100% / 2) - 0.5rem);
     padding: 1rem 0.5rem;
     text-align: center;
 }
@@ -194,7 +194,7 @@ button {
 }
 
 #cover .album>img{
-    width: 200px;
+    max-width: 200px;
 }
 
 #cover .col-100{
@@ -204,13 +204,23 @@ button {
 #cover .album-circle>img{
     border-radius: 50%;
 }
+#cover .flex-cover>.card{
+    flex-grow: 1;
+    
+}
 /*--FOOTER--*/
 
 #foot {
     height: 100px;
     background-color: var(--dark-grey);
     color: var(--white);
-    padding: 0.5rem 0;
+    
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+   
+    
 }
 
 #foot .foot-img {
@@ -319,8 +329,7 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;   
 
 }
 
@@ -335,16 +344,11 @@ button {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .flex-left{
     display: flex;
     flex-direction: row;
-   
-    
-  
-
 }
 
 /*--LG--*/
@@ -354,7 +358,35 @@ button {
 /*--MD--*/
 
 @media screen and (max-width:992px) {
-    #foot .card {}
+    #cover .col {
+        width: calc(100% / 2);
+    }
+    #cover .album>img{
+        max-width: 150px;
+    }
+    #cover .row{
+            justify-content: flex-start;
+    }
+    #cover .flex-cover{
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    #cover .card-title {
+        padding: 0 1.5rem
+    }
+    #cover .col-100 {
+        padding: 0;
+    }
+    #cover .flex-center{
+        align-items: baseline;
+    }
+    #cover .row>.card{
+        padding-left: 10rem;
+        
+    }
+    #cover ul{
+        flex-wrap: nowrap;
+    }
 }
 
 /*--S--*/
