@@ -68,11 +68,11 @@ button {
 /*--MAIN--*/
 
 #main {
-    
+
     background-color: var(--cover);
 }
 
-#wrapper{   
+#wrapper {
     height: 100%;
     display: flex;
 }
@@ -80,8 +80,8 @@ button {
 /*--SIDE-BAR--*/
 
 #side-bar {
-    height: 100%;
-    width: 300px;
+    height: 100vh;
+    width: 200px;
     background-color: var(--black);
     overflow-y: auto;
 }
@@ -98,7 +98,7 @@ button {
 
 #side-bar .icons,
 .text-icons {
-    font-size: 1.25rem;
+
     color: var(--text-grey);
 }
 
@@ -117,30 +117,37 @@ button {
     width: 25px;
     margin: 5px 10px 0 0;
 }
-#side-bar .text-grey{
+
+#side-bar .text-grey {
     color: var(--text-grey);
 }
 
-#side-bar .border{
+#side-bar .border {
     width: 100%;
     padding-right: 10rem;
     border: 1px solid var(--plus);
 }
-#side-bar .profile{
+
+#side-bar .profile {
     width: 25px;
     background-color: var(--plus);
     border-radius: 50%;
     margin: 5px 10px 0 0;
 }
-#side-bar h3{
+
+#side-bar h3 {
     color: var(--white);
     margin: 5px 10px 0 0;
+}
+
+#side-bar .logo-small {
+    display: none;
 }
 
 /*--HEADER--*/
 
 #header {
-    width: calc(100% - 300px);
+    width: calc(100% - 200px);
     height: 100px;
     line-height: 100px;
     text-align: right;
@@ -157,9 +164,9 @@ button {
 
 /*--COVER--*/
 
-#cover{
+#cover {
     margin-top: 100px;
-    width: calc(100% - 300px); 
+    width: calc(100% - 200px);
     overflow-y: auto;
 }
 
@@ -167,60 +174,72 @@ button {
     width: calc(100% / 3);
 }
 
-#cover .card{
-    max-width: calc((100% / 2) - 0.5rem);
+#cover .card {
+    max-width: calc((100%/ 2));
     padding: 1rem 0.5rem;
     text-align: center;
 }
-#cover .card>h3{
+
+#cover .row>.card {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cover .card>h3 {
     color: var(--white);
     margin: 10px 0;
 }
-#cover span{
+
+#cover span {
     color: var(--text-grey);
 }
-#cover .card-title{
+
+#cover .card-title {
     width: 100%;
     padding: 0 2rem;
 }
 
-#cover li{
+#cover li {
     margin: 0 10px;
     font-size: 0.75rem;
 }
-#cover h2{
+
+#cover h2 {
     margin-top: 2rem;
     color: var(--white);
 }
 
-#cover .album>img{
-    max-width: 200px;
+#cover .album>img {
+    max-width: 150px;
 }
 
-#cover .col-100{
+#cover .col-100 {
     padding: 1rem;
-   
+
 }
-#cover .album-circle>img{
+
+#cover .album-circle>img {
     border-radius: 50%;
 }
-#cover .flex-cover>.card{
+
+#cover .flex-cover>.card {
     flex-grow: 1;
-    
+
 }
+
 /*--FOOTER--*/
 
 #foot {
     height: 100px;
     background-color: var(--dark-grey);
     color: var(--white);
-    
+
     position: fixed;
     bottom: 0;
     right: 0;
     left: 0;
-   
-    
+
+
 }
 
 #foot .foot-img {
@@ -255,7 +274,7 @@ button {
     width: 100px;
     height: 4px;
     background-color: var(--plus);
-    border-radius:2px;
+    border-radius: 2px;
 }
 
 #foot .progress-middle {
@@ -268,14 +287,14 @@ button {
 
 #foot .progress-middle-2 {
     display: block;
-    width: 30%;
+    max-width: 30%;
     background-color: var(--plus);
     border-radius: 2px;
     height: 4px;
     position: relative;
 }
 
-#foot .progress-ball{
+#foot .progress-ball {
     width: 15px;
     height: 15px;
     background-color: var(--white);
@@ -287,7 +306,7 @@ button {
     display: none;
 }
 
-#foot .progress-ball-vol{
+#foot .progress-ball-vol {
     width: 15px;
     height: 15px;
     background-color: var(--white);
@@ -307,9 +326,10 @@ button {
 
 .flex-end {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     flex-wrap: wrap;
-    
+
+
 }
 
 .flex-column {
@@ -317,6 +337,7 @@ button {
     flex-direction: column;
     flex-wrap: wrap;
 }
+
 .flex-column-start {
     display: flex;
     flex-direction: column;
@@ -329,7 +350,15 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;   
+    justify-content: center;
+
+}
+
+.flex-end-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
 
 }
 
@@ -338,7 +367,8 @@ button {
     justify-content: space-between;
     align-items: center;
 }
-.flex-cover{
+
+.flex-cover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -346,14 +376,26 @@ button {
     align-items: center;
 }
 
-.flex-left{
+.flex-left {
     display: flex;
     flex-direction: row;
 }
 
+.flex-album {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 /*--LG--*/
 
-@media screen and (max-width:1200px) {}
+@media screen and (max-width:1200px) {
+    #cover .album>img {
+        max-width: 140px;
+    }
+}
 
 /*--MD--*/
 
@@ -361,38 +403,117 @@ button {
     #cover .col {
         width: calc(100% / 2);
     }
-    #cover .album>img{
-        max-width: 150px;
+
+    #cover .album>img {
+        max-width: 100px;
     }
-    #cover .row{
-            justify-content: flex-start;
+
+    #cover .row {
+        justify-content: flex-start;
     }
-    #cover .flex-cover{
+
+    #cover .flex-cover {
         justify-content: space-between;
         align-items: baseline;
     }
+
     #cover .card-title {
         padding: 0 1.5rem
     }
+
     #cover .col-100 {
         padding: 0;
     }
-    #cover .flex-center{
+
+    #cover .flex-center {
         align-items: baseline;
     }
-    #cover .row>.card{
-        padding-left: 10rem;
-        
+
+    #cover ul {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
     }
-    #cover ul{
+    #foot .flex-center{
         flex-wrap: nowrap;
     }
 }
 
 /*--S--*/
 
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+    #cover .col {
+        width: 100%;
+        padding: 0;
+
+    }
+
+    #foot .progress-middle {
+        width: 100px;
+    }
+
+    #foot .volume-2 {
+        width: 50px;
+    }
+
+    #foot .volume {
+        width: 15px;
+    }
+
+    #cover .card {
+        margin: 0 5px;
+    }
+
+    #cover .row>.card {
+        margin: 0 1px;
+        padding: 0;
+    }
+    
+    #foot .sm-card{
+        flex-direction: column;
+    }
+
+}
 
 /*--XS--*/
 
-@media screen and (max-width:576px) {}
+@media screen and (max-width:576px) {
+    #side-bar {
+        width: 50px;
+    }
+
+    #side-bar .card ul,
+    #side-bar .card span,
+    .border,
+    h3 {
+        display: none;
+    }
+    
+
+    #side-bar .logo {
+        display: none;
+    }
+
+    #side .col>.card {
+        position: relative;
+    }
+
+    #side-bar .logo-small {
+        display: block;
+        width: 15px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #cover {
+        width: calc(100% - 50px);
+    }
+
+    #header {
+        width: calc(100% - 50px);
+    }
+    #foot .margin-lr-15 {
+    
+        margin: 0 5px;
+    }
+}
