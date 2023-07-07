@@ -21,56 +21,62 @@
 
             <nav id="side-bar">
                 <div class="container">
-                    <div class="row">
-                        <div class="col debug">
+                    <div class="row flex-column">
+
+                        <div class="col">
                             <div class="card">
                                 <div class="logo"><img src="./img/logo.svg" alt="">
-                                    <div class="logo-small"><img  src="./img/logo-small.svg" alt=""></div>
+                                    <div class="logo-small"><img src="./img/logo-small.svg" alt=""></div>
                                 </div>
 
                             </div>
+                        </div>
+                        <div class="col">
                             <div class="card margin-tb-10">
-                                <div class="icons margin-tb-10"><i class="fa-solid fa-house"></i>
+                                <div class="icons margin-tb-10"><i class="fa-solid fa-house fa-2x"></i>
                                     <span class="text-icons"> Home</span>
                                 </div>
-                                <div class="icons margin-tb-10"><i class="fa-solid fa-magnifying-glass"></i>
+                                <div class="icons margin-tb-10"><i class="fa-solid fa-magnifying-glass fa-2x"></i>
                                     <span class="text-icons"> Cerca</span>
                                 </div>
-                                <div class="icons margin-tb-10"><i class="fa-solid fa-grip-lines-vertical"></i><span
-                                        class="text-icons"> La tua libreria</span>
+                                <div class="icons margin-tb-10"><i
+                                        class="fa-solid fa-grip-lines-vertical fa-2x"></i><span class="text-icons"> La
+                                        tua libreria</span>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col debug">
-                            <div class="card">
+                    
+                        <div class="col .flex-grow">
+                            <div class="card ">
+                                <h3>PLAYLIST</h3>
+                                <i class="fa-solid fa-plus margin-tb-10"></i> <span class="text-grey">Crea
+                                    Playlist</span></li>
+                                </h3>
                                 <ul>
-                                    <li>PLAYLIST</li>
-                                    <li><i class="fa-solid fa-plus"></i> <span>Crea Playlist</span></li>
-                                    <li>Nuovs Playlist</li>
-                                    <li>Nuovs Playlist</li>
-                                    <li>Nuovs Playlist</li>
-                                    <li>Nuovs Playlist</li>
-                                    <li>Nuovs Playlist</li>
-                                    <li>Nuovs Playlist</li>
-                                    <li>Nuovs Playlist</li>
+                                    <li>Nuova Playlist</li>
+                                    <li>Nuova Playlist</li>
+                                    <li>Nuova Playlist</li>
+                                    <li>Nuova Playlist</li>
+                                    <li>Nuova Playlist</li>
+                                    <li>Nuova Playlist</li>
+                                    <li>Nuova Playlist</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="flex-end">
-                            <div class="col ">
-                                <div class="card flex-end-card">
-                                    <div class="download"><img src="./img/download.svg" alt="">
-                                    </div>
-                                    <span class="text-grey"> Installa app</span>
-                                    <div class="border"></div>
-                                    <img class="profile" src="./img/profile.svg" alt="">
-                                    <h3>John Doe</h3>
+
+                        <div class="col">
+                            <div class="card flex-end-card">
+                                <div class="download"><img src="./img/download.svg" alt="">
                                 </div>
+                                <span class="text-grey"> Installa app</span>
+                                <div class="border"></div>
+                                <img class="profile" src="./img/profile.svg" alt="">
+                                <h3>John Doe</h3>
                             </div>
-                        </div>
+
                         </div>
                     </div>
+                </div>
             </nav>
 
             <!--HEADER-->
@@ -85,8 +91,8 @@
 
             <section id="cover">
                 <div class="container ">
-                    <div class="row flex-album">
-                        <div class="card">
+                    <div class="row">
+                        <div class="card-title">
                             <ul class="flex-center">
                                 <li>IN EVIDENZA</li>
                                 <li>PODCAST</li>
@@ -101,7 +107,8 @@
                             <h2>Recently played</h2>
                         </div>
 
-                        <div class="col flex-cover">
+                       <div class="flex-album">
+
                             <div class="card">
                                 <div class="album"><img src="./img/metal_lifting.jpg" alt=""></div>
                                 <h3>Heavy Metal</h3>
@@ -112,9 +119,9 @@
                                 <h3>Stranger Things, Vol.1(a Netflix original Series Sountrack)</h3>
                                 <span>Kyle Dixon & Michael Stein</span>
                             </div>
-                        </div>
+                       
 
-                        <div class="col flex-cover">
+                       
                             <div class="card">
                                 <div class="album"><img src="./img/aquietplace.jpeg" alt=""></div>
                                 <h3>A quite place</h3>
@@ -125,8 +132,8 @@
                                 <h3>Split</h3>
                                 <span>Subtitle</span>
                             </div>
-                        </div>
-                        <div class="col flex-cover">
+                       
+                        
                             <div class="card">
                                 <div class="album"><img src="./img/cure.jpeg" alt=""></div>
                                 <h3>A cure for wellness</h3>
@@ -138,13 +145,14 @@
                                 <span>Subtitle</span>
                             </div>
                         </div>
+
                         <div class="card-title">
                             <h2 class="margin-tb-10">Creato per John Doe</h2>
                             <span>Più ascolti, più accurati saranno i suggerimenti.</span>
                         </div>
                     </div>
 
-                    <div class="flex-column-start">
+                    
                         <div class="col-100 flex-cover">
                             <div class="card">
                                 <div class="album"><img src="./img/radar.jpeg" alt=""></div>
@@ -155,7 +163,7 @@
                                 <h3>Daily mix 1</h3>
                             </div>
                         </div>
-                    </div>
+                  
 
                     <div class="card-title">
                         <h2 class="margin-tb-10">Ascolti più popolari</h2>
@@ -163,7 +171,7 @@
                     </div>
                 </div>
 
-                <div class="flex-column-start">
+                
                     <div class="col-100 flex-cover">
 
                         <div class="card">
@@ -175,10 +183,8 @@
                             <h3>Ludovico Einaudi</h3>
                         </div>
                     </div>
-                </div>
-        </div>
-        </div>
-        </section>
+               
+            </section>
         </div>
     </main>
 
@@ -186,14 +192,14 @@
     <footer id="foot">
         <div class="full-container">
             <div class="row">
-                <div class="flex-between">
+                <div class="flex-foot">
 
                     <!--COL--LEFT-->
 
-                    <div class="col ">
+                    <div class="col foot-side">
                         <div class="card flex-center">
                             <div class="foot-img"><img src="./img/sinister.jpeg" alt=""></div>
-                            <div class=" margin-lr-15 flex-column">
+                            <div class="info-song margin-lr-10 flex-column">
                                 <h5 class="text">Sinister</h5>
                                 <div class="sm-card">
                                     <span>Brano</span>
@@ -201,7 +207,7 @@
                                 </div>
                             </div>
                             <div class="sm-card flex-center">
-                                <div class="icons margin-lr-15"><i class="fa-regular fa-heart"></i></div>
+                                <div class="icons margin-lr-10"><i class="fa-regular fa-heart"></i></div>
                                 <div class="icons "><i class="fa-regular fa-folder"></i></div>
                             </div>
                         </div>
@@ -209,40 +215,40 @@
 
                     <!--COL--CENTER-->
 
-                    <div class="col">
+                    <div class="col foot-middle">
                         <div class="card flex-center">
-                            <div class="icons margin-lr-15"><i class="fa-solid fa-shuffle"></i></div>
-                            <div class="icons margin-lr-15"><i class="fa-solid fa-backward-step"></i></div>
-                            <div class="icons margin-lr-15"><i class="fa-regular fa-circle-play"></i></div>
-                            <div class="icons margin-lr-15"><i class="fa-solid fa-forward-step"></i></div>
-                            <div class="icons margin-lr-15"><i class="fa-solid fa-rotate-right"></i></div>
+                            <div class="icons margin-lr-10"><i class="fa-solid fa-shuffle"></i></div>
+                            <div class="icons margin-lr-10"><i class="fa-solid fa-backward-step"></i></div>
+                            <div class="icons margin-lr-10"><i class="fa-regular fa-circle-play"></i></div>
+                            <div class="icons margin-lr-10"><i class="fa-solid fa-forward-step"></i></div>
+                            <div class="icons margin-lr-10"><i class="fa-solid fa-rotate-right"></i></div>
                         </div>
                         <div class="card margin-tb-10 flex-center">
-                            <div class="time margin-lr-15">0:25</div>
+                            <div class="time margin-lr-10">0:25</div>
                             <div class="control-progress">
-                                <span class="progress-middle">
-                                    <span class="progress-middle-2">
-                                        <span class="progress-ball"></span>
-                                    </span>
-                                </span>
+                                <div class="progress-middle">
+                                    <div class="progress-middle-2">
+                                        <div class="progress-ball"></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="time margin-lr-15">4:35</div>
+                            <div class="time margin-lr-10">4:35</div>
                         </div>
                     </div>
 
                     <!--COL--RIGHT-->
 
-                    <div class="col">
+                    <div class="col foot-side">
                         <div class="card flex-center">
-                            <div class="icons margin-lr-15"><i class="fa-solid fa-list"></i></div>
-                            <div class="icons margin-lr-15"><i class="fa-solid fa-desktop"></i></div>
-                            <div class="icons margin-lr-15"><i class="fa-solid fa-volume-high"></i></div>
+                            <div class="icons margin-lr-10"><i class="fa-solid fa-list"></i></div>
+                            <div class="icons margin-lr-10"><i class="fa-solid fa-desktop"></i></div>
+                            <div class="icons margin-lr-10"><i class="fa-solid fa-volume-high"></i></div>
                             <div class="control-volume">
-                                <span class="volume-2">
-                                    <span class="volume">
-                                        <span class="progress-ball-vol"></span>
-                                    </span>
-                                </span>
+                                <div class="volume-2">
+                                    <div class="volume">
+                                        <div class="progress-ball-vol"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
