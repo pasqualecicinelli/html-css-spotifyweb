@@ -243,24 +243,33 @@ button {
     width: 45%;
 }
 #foot .foot-side{
-    width: 25%;
+    width: 30%;
 }
 #foot .foot-middle{
-    width: 50%;
+    width: 40%;
 }
-#foot .time, #foot .icons{
+#foot .time {
+    width: 8%;
+}
+#foot .sm-icons>.icons{
     width: 5%;
 }
 
 #foot .foot-img {
-    width: 15%;
+    max-width: 50px;
 }
 
 #foot img {
     width: 100%;
 }
 #foot .info-song{
-    width: 50%;
+    width: 40%;
+}
+#foot .sm-icons{
+    width: 25%;
+}
+#foot .sm-info{
+    width: 100%;
 }
 
 #foot .sm-card .icons,
@@ -333,10 +342,6 @@ button {
     display: none;
 }
 
-#foot .fa-circle-play {
-    font-size: 2rem;
-}
-
 /*--FLEX--*/
 
 .flex-end {
@@ -375,6 +380,12 @@ button {
     flex-wrap: wrap;
     align-items: center;
 
+}
+.flex-control-end{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .flex-between {
@@ -433,10 +444,19 @@ button {
         justify-content: flex-start;
     }
 
-    #cover .card-title,
+    
     #cover .col-100 {
         padding: 0;
     }
+    #cover .card-title {
+        padding: 0.5rem 0;
+        
+    }
+    #cover li {
+        
+        margin-top: 1.5rem;
+    }
+        
 
     #cover .row {
         margin: 0;
@@ -449,6 +469,7 @@ button {
     #foot .flex-between{
         justify-content: flex-start;
     }
+    
 }
 
 /*--S--*/
@@ -459,10 +480,15 @@ button {
         width: calc(100% / 2);
     }
 
-    #foot .sm-card {
+    #foot .sm-icons.flex-center{
         flex-direction: column;
     }
-
+    #foot .control-progress {
+        width: 40%;
+    }
+    #foot .info-song{
+        width: 65%;
+    }
 }
 
 /*--XS--*/
