@@ -25,8 +25,8 @@
 
                         <div class="col">
                             <div class="card">
-                                <div class="logo"><img src="./img/logo.svg" alt="">
-                                    <div class="logo-small"><img src="./img/logo-small.svg" alt=""></div>
+                                <div class="logo"><img class="big-logo" src="./img/logo.svg" alt="">
+                                    <div class="logo-small"><img class="sm-logo" src="./img/logo-small.svg" alt=""></div>
                                 </div>
 
                             </div>
@@ -46,12 +46,11 @@
                             </div>
                         </div>
 
-                        <div class="col .flex-grow">
-                            <div class="card ">
+                        <div class="col flex-grow">
+                            <div class="card">
                                 <h3>PLAYLIST</h3>
-                                <i class="fa-solid fa-plus margin-tb-10"></i> <span class="text-grey">Crea
-                                    Playlist</span></li>
-                                </h3>
+                                <i class="fa-solid fa-plus margin-tb-10"></i> <span class="text-icons">Crea
+                                    Playlist</span>
                                 <ul>
                                     <li>Nuova Playlist</li>
                                     <li>Nuova Playlist</li>
@@ -65,13 +64,17 @@
                         </div>
 
                         <div class="col">
-                            <div class="card flex-end-card">
-                                <div class="download"><img src="./img/download.svg" alt="">
+                            <div class="card">
+                                <div class="flex-bottom-side border">
+                                    <div class="download"><img src="./img/download.svg" alt="">
+                                    </div>
+                                    <span class="text-icons"> Installa app</span>
                                 </div>
-                                <span class="text-grey"> Installa app</span>
-                                <div class="border"></div>
-                                <img class="profile" src="./img/profile.svg" alt="">
-                                <h3>John Doe</h3>
+                                
+                                <div class="flex-bottom-side">
+                                    <img class="profile" src="./img/profile.svg" alt="">
+                                    <h3>John Doe</h3>
+                                </div>
                             </div>
 
                         </div>
@@ -94,7 +97,7 @@
                     <div class="row">
                         <div class="card-title">
                             <ul class="flex-center">
-                                <li>IN EVIDENZA</li>
+                                <li>IN EVIDENZA <div class="underline"></div></li>
                                 <li>PODCAST</li>
                                 <li>CLASSIFICHE</li>
                                 <li>GENERI E MOOD</li>
@@ -110,7 +113,9 @@
                         <div class="flex-album">
 
                             <div class="card">
-                                <div class="album"><img src="./img/metal_lifting.jpg" alt=""></div>
+                                <div class="album"><img src="./img/metal_lifting.jpg" alt="">
+                              <!--hover  <div class="opacity"><i class="fa-regular fa-circle-play fa-2xl"></i></div>-->
+                                </div>
                                 <h3>Heavy Metal</h3>
                                 <span>Subtitle</span>
                             </div>
@@ -200,10 +205,9 @@
                         <div class="card flex-center">
                             <div class="foot-img"><img src="./img/sinister.jpeg" alt=""></div>
                             <div class="info-song margin-lr-10 flex-column">
-                                <h5 class="text">Sinister</h5>
+                                <h5>Sinister</h5>
                                 <div class="sm-info">
-                                    <span>Brano</span>
-                                    <span>Nome</span>
+                                    <span>Brano Nome</span>
                                 </div>
                             </div>
                             <div class="sm-icons flex-center">
@@ -215,7 +219,7 @@
 
                     <!--COL--CENTER-->
 
-                    <div class="col foot-middle">
+                    <div class="col foot-middle margin-tb-15">
                         <div class="card flex-center">
                             <div class="icons margin-lr-10"><i class="fa-solid fa-shuffle"></i></div>
                             <div class="icons margin-lr-10"><i class="fa-solid fa-backward-step"></i></div>
@@ -223,7 +227,7 @@
                             <div class="icons margin-lr-10"><i class="fa-solid fa-forward-step"></i></div>
                             <div class="icons margin-lr-10"><i class="fa-solid fa-rotate-right"></i></div>
                         </div>
-                        <div class="card margin-tb-10 flex-center">
+                        <div class="card margin-tb-15 flex-center">
                             <div class="time margin-lr-10">0:25</div>
                             <div class="control-progress">
                                 <div class="progress-middle">
